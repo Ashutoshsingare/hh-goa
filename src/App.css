@@ -9,9 +9,9 @@ html { font-size: 16px; -webkit-font-smoothing: antialiased; }
 
 /* ---- Tokens ---- */
 :root {
-  --green:      #0C2B1C;
-  --green-mid:  #0B6839;
-  --green-dark: #081A11;
+  --green:      #0B6839;
+  --green-mid:  #09562F;
+  --green-dark: #074727;
   --cream:      #F5ECD7;
   --cream-dark: #EAD9B8;
   --yellow:     #FEE101;

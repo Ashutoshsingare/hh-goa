@@ -32,25 +32,26 @@ export default function PreviewPage() {
 
   const handleShareX = useCallback(() => {
     const nameText = credential.name ? credential.name.trim() : 'Builder';
+    const roleText = credential.role ? credential.role.trim() : 'Developer';
     const hackerIdText = credential.hackerId || 'HH-2026';
 
-    const tweetText = `🚀 Builder mode: ON.
+    const tweetText = `🚀 **Builder mode: ON.**
 
-Just got my HH Goa 2026 Builder Card 🌴
+Just got my HH Goa 2026 Builder Card 
 
 👤 ${nameText}
+💻 ${roleText}
 🪪 ${hackerIdText}
 ⚡ Build. Ship. Connect.
 
 Create yours → https://hh-goacards.vercel.app/
 
 See you in Goa. 🏝️
-
 #FrameInGoa #HHGoa2026`;
 
     const intentUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
     window.open(intentUrl, '_blank', 'noopener,noreferrer');
-  }, [credential.name, credential.hackerId]);
+  }, [credential.name, credential.role, credential.hackerId]);
 
   const handleCreateAnother = useCallback(() => {
     resetCredential();

@@ -516,8 +516,24 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
+}
+
+/* X / Twitter Share Button */
+.btn--x-share {
+  background: #000000;
+  color: #FFFFFF;
+  border: 1px solid rgba(245, 236, 215, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--x-share:hover {
+  background: #111111;
+  border-color: var(--yellow);
+  color: var(--yellow);
 }
 
 /* Card scaler wrapper */
